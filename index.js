@@ -6,17 +6,6 @@ const port = 3000
 const app = express()
 app.use(express.json())
 
-/*  - Query params => meusite.com/users?name=rodolfo&age=28 //FILTROS
-    - Route params => /users/2      //BUSCAR, DELETAR OU ATUALIZAR ALGO ESPECIFICO
-    - Request Body => { "name": "Rodolfo", "age"}
-
-    - GET => Buscar informacao no back end
-    - POST => Criar informacao no back end
-    - PUT/PATCH => Alterar/atualizar informacao no back end
-    - DELETE => Deletar informacao no back end
-
-    - Middlewares => INTERCEPTADOR => Tem o poder de parar ou alterar dados da requisição.
-*/
 
 const users = []
 
@@ -78,10 +67,3 @@ app.listen(port, () =>{
 })
 
 
-/*
-//depois de fazer a aplicacao acima, precisa rodar o programa. Para isso tem que ir no terminal
-//abaixo e digitar: node index.js
-//toda vez que fizer uma alteracao, precisa parar o terminal digitando: control C e depois
-//roda novamente digitando: node index.js
-//
-*/
